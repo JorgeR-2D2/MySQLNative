@@ -175,7 +175,7 @@ public class MySQLNative<T> {
 			}
 		}
 		construccion.append(construccionWheres.toString()+construccionOrdersBy);
-		return construccion.toString()+t.getClass();
+		return construccion.toString();
 
 	}
 	public List<T> getResults() {
