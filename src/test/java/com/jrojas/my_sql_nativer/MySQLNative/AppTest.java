@@ -1,5 +1,7 @@
 package com.jrojas.my_sql_nativer.MySQLNative;
 
+import com.jrojas.my_sql_nativer.MySQLNative.model.MySQLNative;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -33,6 +35,5 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
     }
 }

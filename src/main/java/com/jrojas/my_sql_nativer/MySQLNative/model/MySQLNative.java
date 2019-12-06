@@ -7,6 +7,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
+
+
 
 public class MySQLNative<T> {
 
@@ -174,7 +178,10 @@ public class MySQLNative<T> {
 		return construccion.toString()+t.getClass();
 
 	}
-	
+	public List<T> getResults() {
+		Query q=em.createNativeQuery(this.build(), t.getClass());
+		return q.getResultList();
+	}
 	
 	
 	private String queryInicial;
@@ -190,6 +197,6 @@ public class MySQLNative<T> {
 	private List<LeftJoin> leftJoins = new ArrayList<LeftJoin>();
 	private Class<T> ct;
 	private T t;
-	
-	
+	@Autowired
+	EntityManager em;
 }
