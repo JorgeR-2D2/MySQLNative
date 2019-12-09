@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.github.JorgeR-2D2</groupId>
+  <artifactId>MySQLNative</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20191209185441</lastUpdated>
+  </versioning>
+</metadata>
